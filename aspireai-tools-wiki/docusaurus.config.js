@@ -22,6 +22,7 @@ const config = {
   // GitHub pages deployment config.
   organizationName: 'aspireai-tools', // Your GitHub organization/user name
   projectName: 'wiki', // Your repository name
+  trailingSlash: true,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
