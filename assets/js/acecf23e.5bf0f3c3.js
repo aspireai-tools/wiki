@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkaspireai_tools_wiki=self.webpackChunkaspireai_tools_wiki||[]).push([[1903],{1912:i=>{i.exports=JSON.parse('{"blogBasePath":"/wiki/blog","blogTitle":"Blog","authorsListPath":"/wiki/blog/authors"}')}}]);
