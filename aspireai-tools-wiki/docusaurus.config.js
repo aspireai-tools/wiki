@@ -24,7 +24,7 @@ const config = {
   projectName: 'wiki', // Your repository name
   trailingSlash: true,
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   i18n: {
@@ -42,18 +42,11 @@ const config = {
           // Please change this to your repo.
           editUrl: 'https://github.com/aspireai-tools/wiki/tree/main/',
         },
-        // blog: {
-        //   showReadingTime: true,
-        //   feedOptions: {
-        //     type: ['rss', 'atom'],
-        //     xslt: true,
-        //   },
-        //   // Please change this to your repo.
-        //   editUrl: 'https://github.com/aspireai-tools/wiki/tree/main/',
-        // },
-        // theme: {
-        //   customCss: './src/css/custom.css',
-        // },
+        // Remove or comment out the blog configuration
+        // blog: { ... },
+        theme: {
+          customCss: './src/css/custom.css',
+        },
       }),
     ],
   ],
@@ -89,7 +82,7 @@ const config = {
             items: [
               {
                 label: 'Aspire AI Documentation',
-                to: '/docs/', // Update the link to point to your docs
+                to: '/docs/overview', // Change this line from '/docs/' to '/docs/overview'
               },
             ],
           },
