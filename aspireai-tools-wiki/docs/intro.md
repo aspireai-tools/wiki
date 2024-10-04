@@ -2,46 +2,35 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Aspire AI Tools Overview
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Welcome to the Aspire AI Tools documentation. This guide provides comprehensive information about our AI-driven tools and how to use them effectively in your projects.
 
-## Getting Started
+## What are Aspire AI Tools?
 
-Get started by **creating a new site**.
+Aspire AI Tools is a suite of artificial intelligence solutions designed to enhance your development workflow and improve project outcomes.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## Engagement Strategy
 
-### What you'll need
+Our engagement strategy defines how we match projects within businesses to the most applicable AI tools for their purpose, ensuring value creation from each AI tool deployment:
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+1. **Project Review & Initial Assessment**: Conduct a high-level review of the project to understand its scope, goals, technology stack, and involved personnel.
 
-## Generate a new site
+2. **Initial AI Suitability Evaluation**: Determine the AI suitability of a project by examining decision-making processes and potential business value.
 
-Generate a new Docusaurus site using the **classic template**.
+3. **Deeper Technical Deep Dive**: For high-potential projects, assess data infrastructure, workflows, and identify best points for AI integration.
 
-The classic template will automatically be added to your project after you run the command:
+4. **Tool Selection & Market Research**: Match project requirements with available AI tools using our AI wiki categories. Conduct market research if needed.
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+5. **Verify Business Value Impact**: Validate the added business value of AI integration, focusing on quantifiable outcomes.
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+6. **Data Readiness Assessment**: For data-driven projects, assess data quality, availability, governance, and privacy concerns.
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+7. **Proof of Concept (POC) Development**: Create and test a POC to validate AI tool performance in a limited scope.
 
-## Start your site
+8. **Full AI Integration Plan**: Develop a detailed plan for full-scale AI integration, including timelines and resource needs.
 
-Run the development server:
+9. **Governance & Compliance Review**: Ensure AI tool compliance with internal policies and legal regulations.
 
-```bash
-cd my-website
-npm run start
-```
+10. **Monitor & Iterate**: Continuously monitor AI tool performance and consider upgrades as new tools become available.
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.

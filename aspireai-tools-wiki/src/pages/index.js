@@ -1,9 +1,8 @@
+import React from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
@@ -20,7 +19,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            Explore Our Tools
           </Link>
         </div>
       </div>
@@ -28,15 +27,63 @@ function HomepageHeader() {
   );
 }
 
+function FeatureList() {
+  return [
+    {
+      title: 'AI-Powered Solutions',
+      description: (
+        <>
+          Our tools leverage cutting-edge AI technology to enhance your development workflow and improve project outcomes.
+        </>
+      ),
+    },
+    {
+      title: 'Easy Integration',
+      description: (
+        <>
+          Seamlessly integrate Aspire AI Tools into your existing projects with our comprehensive documentation and support.
+        </>
+      ),
+    },
+    {
+      title: 'Continuous Innovation',
+      description: (
+        <>
+          Stay ahead of the curve with our constantly evolving suite of AI tools, designed to meet the changing needs of developers.
+        </>
+      ),
+    },
+  ];
+}
+
+function Feature({title, description}) {
+  return (
+    <div className={clsx('col col--4')}>
+      <div className="text--center padding-horiz--md">
+        <Heading as="h3">{title}</Heading>
+        <p>{description}</p>
+      </div>
+    </div>
+  );
+}
+
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title}`}
+      description="Documentation and Tools for AI Solutions">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <section className={styles.features}>
+          <div className="container">
+            <div className="row">
+              {FeatureList().map((props, idx) => (
+                <Feature key={idx} {...props} />
+              ))}
+            </div>
+          </div>
+        </section>
       </main>
     </Layout>
   );

@@ -42,18 +42,18 @@ const config = {
           // Please change this to your repo.
           editUrl: 'https://github.com/aspireai-tools/wiki/tree/main/',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          editUrl: 'https://github.com/aspireai-tools/wiki/tree/main/',
-        },
-        theme: {
-          customCss: './src/css/custom.css',
-        },
+        // blog: {
+        //   showReadingTime: true,
+        //   feedOptions: {
+        //     type: ['rss', 'atom'],
+        //     xslt: true,
+        //   },
+        //   // Please change this to your repo.
+        //   editUrl: 'https://github.com/aspireai-tools/wiki/tree/main/',
+        // },
+        // theme: {
+        //   customCss: './src/css/custom.css',
+        // },
       }),
     ],
   ],
@@ -61,21 +61,19 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/docusaurus-social-card.jpg',
+      // image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Aspire AI Tools Wiki',
         logo: {
           alt: 'Aspire AI Logo',
-          src: 'img/logo.svg',
+          src: 'img/aspire.png',
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
+            to: '/docs/intro', // Update this line
             label: 'Docs',
+            position: 'left',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/aspireai-tools/wiki',
             label: 'GitHub',
@@ -83,51 +81,30 @@ const config = {
           },
         ],
       },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Docs',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/aspireai-tools/wiki',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} Aspire AI Tools. Built with Docusaurus.`,
-      },
+footer: {
+  style: 'dark',
+  links: [
+    {
+      title: 'Docs',
+      items: [
+        {
+          label: 'Aspire AI Documentation',
+          to: '/docs/', // Update the link to point to your docs
+        },
+      ],
+    },
+    {
+      title: 'More',
+      items: [
+        {
+          label: 'GitHub',
+          href: 'https://github.com/aspireai-tools/wiki',
+        },
+      ],
+    },
+  ],
+  copyright: `Copyright © ${new Date().getFullYear()} Aspire AI. Built with Docusaurus.`,
+},
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
