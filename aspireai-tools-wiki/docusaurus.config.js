@@ -70,7 +70,7 @@ const config = {
         },
         items: [
           {
-            to: '/docs/intro', // Update this line
+            to: '/docs/overview',  // Update this line
             label: 'Docs',
             position: 'left',
           },
@@ -81,30 +81,30 @@ const config = {
           },
         ],
       },
-footer: {
-  style: 'dark',
-  links: [
-    {
-      title: 'Docs',
-      items: [
-        {
-          label: 'Aspire AI Documentation',
-          to: '/docs/', // Update the link to point to your docs
-        },
-      ],
-    },
-    {
-      title: 'More',
-      items: [
-        {
-          label: 'GitHub',
-          href: 'https://github.com/aspireai-tools/wiki',
-        },
-      ],
-    },
-  ],
-  copyright: `Copyright © ${new Date().getFullYear()} Aspire AI. Built with Docusaurus.`,
-},
+      footer: {
+        style: 'dark',
+        links: [
+          {
+            title: 'Docs',
+            items: [
+              {
+                label: 'Aspire AI Documentation',
+                to: '/docs/', // Update the link to point to your docs
+              },
+            ],
+          },
+          {
+            title: 'More',
+            items: [
+              {
+                label: 'GitHub',
+                href: 'https://github.com/aspireai-tools/wiki',
+              },
+            ],
+          },
+        ],
+        copyright: `Copyright © ${new Date().getFullYear()} Aspire AI. Built with Docusaurus.`,
+      },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
