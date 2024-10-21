@@ -103,6 +103,7 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
+  staticDirectories: ['static'],
 };
 
 export default config;
